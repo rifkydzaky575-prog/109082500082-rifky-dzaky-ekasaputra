@@ -23,9 +23,14 @@ Linked list atau yang disebut juga senarai berantai adalah Salah satu bentuk str
 ### 1. ...
 
 ```C++
-source code guided 1
+#include <iostream>
+using namespace std;
+int main() {
+    cout << "ijja, bau belom mandi!" << endl;
+    return 0;
+}
 ```
-penjelasan singkat guided 1
+ini buat menambahkan nama dengan cout
 
 ### 2. ...
 
