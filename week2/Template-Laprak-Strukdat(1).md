@@ -20,7 +20,7 @@ Linked list atau yang disebut juga senarai berantai adalah Salah satu bentuk str
 
 ## Guided 
 
-### 1. ...
+### 1. praktikum 1
 
 ```C++
 #include <iostream>
@@ -48,15 +48,33 @@ penjelasan singkat guided 3
 
 ## Unguided 
 
-### 1. (isi dengan soal unguided 1)
+### 1. ungguided 1
 
 ```C++
-source code unguided 1
+#include <iostream>
+using namespace std;
+ 
+int main() {
+    float a, b;
+ 
+    cout << "Masukkan bilangan pertama : ";
+    cin >> a;
+    cout << "Masukkan bilangan kedua   : ";
+    cin >> b;
+ 
+    cout << "\nHasil operasi:" << endl;
+    cout << "Penjumlahan : " << (a + b) << endl;
+    cout << "Pengurangan : " << (a - b) << endl;
+    cout << "Perkalian   : " << (a * b) << endl;
+    cout << "Pembagian   : " << (a / b) << endl;
+ 
+    return 0;
+}
 ```
 ### Output Unguided 1 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 1_1]https://github.com/rifkydzaky575-prog/109082500082-rifky-dzaky-ekasaputra/blob/main/week2/ss-ungguided1_edited.png
 
 contoh :
 ![Screenshot Output Unguided 1_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided1-1.png)
