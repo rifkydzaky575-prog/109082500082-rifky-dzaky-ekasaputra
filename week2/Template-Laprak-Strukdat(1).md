@@ -75,7 +75,7 @@ int main() {
 
 ##### Output 1
 
-![Screenshot Output Unguided 1_1](https://github.com/rifkydzaky575-prog/109082500082-rifky-dzaky-ekasaputra/raw/main/week2/ss-unguided1_edited.png)
+![Screenshot Output Unguided 1_1](ss-unguided1.png)
 
 
 ##### Output 2
