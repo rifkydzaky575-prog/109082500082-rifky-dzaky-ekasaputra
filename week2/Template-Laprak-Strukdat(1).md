@@ -1,5 +1,5 @@
 # <h1 align="center">Laporan Praktikum Modul 1 - Codeblocks IDE & Pengenalan Bahas C++ (Bagian Pertama)</h1>
-<p align="center">Muhammad Dhimas Hafizh Fathurrahman - 2311102151</p>
+<p align="center">rifky dzaky eka saputra - 109082500082</p>
 
 ## Dasar Teori
 isi dengan penjelasan dasar teori disertai referensi jurnal (gunakan kurung siku [] untuk pernyataan yang mengambil refernsi dari jurnal).
@@ -8,7 +8,7 @@ Linked list atau yang disebut juga senarai berantai adalah Salah satu bentuk str
 
 ### A. Manusi super<br/>
 ...
-#### 1. ...
+#### 1. super hero
 #### 2. ...
 #### 3. ...
 
@@ -74,10 +74,9 @@ int main() {
 ### Output Unguided 1 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_1](https://github.com/rifkydzaky575-prog/109082500082-rifky-dzaky-ekasaputra/blob/main/week2/ss-ungguided1.png)
 
-contoh :
-![Screenshot Output Unguided 1_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided1-1.png)
+![![Screenshot Output Unguided 1_1](week2/ss-unguided1_edited.png)](https://github.com/rifkydzaky575-prog/109082500082-rifky-dzaky-ekasaputra/blob/main/week2/ss-ungguided1.png)
+
 
 ##### Output 2
 ![Screenshot Output Unguided 1_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
