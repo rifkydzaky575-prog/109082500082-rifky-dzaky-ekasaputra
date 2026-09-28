@@ -74,7 +74,7 @@ int main() {
 ### Output Unguided 1 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_1]https://github.com/rifkydzaky575-prog/109082500082-rifky-dzaky-ekasaputra/blob/main/week2/ss-ungguided1_edited.png
+![Screenshot Output Unguided 1_1](https://github.com/rifkydzaky575-prog/109082500082-rifky-dzaky-ekasaputra/blob/main/week2/ss-ungguided1.png)
 
 contoh :
 ![Screenshot Output Unguided 1_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided1-1.png)
