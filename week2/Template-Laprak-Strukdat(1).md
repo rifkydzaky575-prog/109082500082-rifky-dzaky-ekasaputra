@@ -91,7 +91,7 @@ source code unguided 2
 ### Output Unguided 2 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_1](week2/ss-unguided1_edited.png)
+![ss-ungguided1.png](https://github.com/rifkydzaky575-prog/109082500082-rifky-dzaky-ekasaputra/raw/main/week2/ss-unguided1.png)
 
 contoh :
 ![Screenshot Output Unguided 2_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided2-1.png)
