@@ -79,8 +79,7 @@ int main() {
 
 
 ##### Output 2
-![Screenshot Output Unguided 1_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
-
+![Screenshot Output Unguided 1_2](ss-ungguided1_2.png)
 penjelasan unguided 1 
 
 ### 2. (isi dengan soal unguided 2)
