@@ -75,7 +75,7 @@ int main() {
 
 ##### Output 1
 
-![Screenshot Output Unguided 1_1](ss-unguided1.png)
+![Screenshot Output Unguided 1_1](ss-ungguided1.png)
 
 
 ##### Output 2
