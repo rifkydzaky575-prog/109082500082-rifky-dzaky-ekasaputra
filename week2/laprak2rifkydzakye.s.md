@@ -52,6 +52,7 @@ Program C++ tersebut merupakan kalkulator sederhana yang berfungsi untuk menghit
 ### 2. ungguided 2
 Buatlah sebuah program yang menerima masukan angka dan mengeluarkan output nilai angka tersebut dalam bentuk tulisan. Angka yang akan di-input-kan user adalah bilangan bulat positif mulai dari 0 s.d 100
 
+```C++
 #include <iostream>
 using namespace std;
 
@@ -94,6 +95,7 @@ int main() {
 
     return 0;
 }
+```
 ### Output Unguided 2 :
 
 ##### Output 1
@@ -108,8 +110,9 @@ Buatlah program yang dapat memberikan input dan output sbb.   input: 3
   2 1 * 1 2
     1 * 1
       *
-```[cite: 2]
 
+
+```C++
 #include <iostream>
 using namespace std;
 
@@ -146,6 +149,7 @@ int main() {
 
     return 0;
 }
+```
 ### Output Unguided 3 :
 
 ##### Output 1
