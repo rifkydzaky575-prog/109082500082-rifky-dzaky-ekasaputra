@@ -163,5 +163,4 @@ Melalui praktikum Modul 1 ini, saya dapat memahami kembali konsep-konsep dasar p
 
 ## Referensi
 [1] Ratnasari, N., & Wibawa, A. P. (2020). Analisis perbandingan kualitas UI/UX platform online coding course pada pembelajaran daring pemrograman komputer dengan metode a/b testing. JEPIN (Jurnal Edukasi dan Penelitian Informatika), 6(2), 210-216. 
-<br>[2] Indahyati, Uce., Rahmawati Yunianita. (2020). "BUKU AJAR ALGORITMA DAN PEMROGRAMAN DALAM BAHASA C++". Sidoarjo: Umsida Press. Diakses pada 10 Maret 2024 melalui https://doi.org/10.21070/2020/978-623-6833-67-4.
 
