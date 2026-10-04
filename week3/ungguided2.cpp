@@ -2,7 +2,6 @@
 #include <iostream>
 using namespace std;
 
-// Menukar 3 variabel menggunakan pointer
 void tukarPointer(int *a, int *b, int *c) {
     int temp = *a;
     *a = *b;
@@ -10,7 +9,6 @@ void tukarPointer(int *a, int *b, int *c) {
     *c = temp;
 }
 
-// Menukar 3 variabel menggunakan reference
 void tukarReference(int &a, int &b, int &c) {
     int temp = a;
     a = b;
@@ -34,7 +32,6 @@ int main() {
     cout << "b = " << b << endl;
     cout << "c = " << c << endl;
 
-    // Menggunakan pointer
     int x = a, y = b, z = c;
     tukarPointer(&x, &y, &z);
 
@@ -43,7 +40,6 @@ int main() {
     cout << "b = " << y << endl;
     cout << "c = " << z << endl;
 
-    // Menggunakan reference
     tukarReference(a, b, c);
 
     cout << "\nHasil menggunakan Reference:" << endl;

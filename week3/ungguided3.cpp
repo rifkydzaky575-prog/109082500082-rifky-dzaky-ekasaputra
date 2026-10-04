@@ -2,7 +2,6 @@
 #include <iostream>
 using namespace std;
 
-// Fungsi mencari nilai minimum
 int cariMinimum(int arr[], int n) {
     int min = arr[0];
 
@@ -15,7 +14,6 @@ int cariMinimum(int arr[], int n) {
     return min;
 }
 
-// Fungsi mencari nilai maksimum
 int cariMaksimum(int arr[], int n) {
     int maks = arr[0];
 
@@ -28,7 +26,6 @@ int cariMaksimum(int arr[], int n) {
     return maks;
 }
 
-// Prosedur menghitung rata-rata
 void hitungRataRata(int arr[], int n) {
     int total = 0;
 

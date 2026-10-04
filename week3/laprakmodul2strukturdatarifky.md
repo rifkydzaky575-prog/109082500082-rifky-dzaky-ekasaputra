@@ -4,18 +4,6 @@
 ## Dasar Teori
 Array merupakan struktur data linier pada bahasa C++ yang menyimpan sekumpulan elemen bertipe sejenis secara kontigu pada lokasi memori fisik, sehingga memungkinkan efisiensi waktu akses elemen sebesar $O(1)$ melalui indeksnya meskipun alokasinya bersifat statis [1]. Dalam arsitektur memori komputer, setiap variabel yang dideklarasikan dialokasikan pada alamat fisik tertentu, di mana pointer hadir sebagai variabel khusus untuk menyimpan alamat memori (memory address) tersebut, bukan nilai datanya [1]. Hubungan erat antara keduanya terlihat dari nama variabel array yang pada dasarnya bertindak sebagai pointer konstan yang menunjuk ke alamat memori elemen pertamanya ($index [0]$), sehingga memungkinkan pengaksesan dan manipulasi data secara langsung pada alokasi memori RAM [1].Untuk mengoptimalkan struktur program agar modular dan menghindari duplikasi kode, C++ menerapkan fungsi yang mengembalikan nilai balik (return value) serta prosedur bertipe void untuk mengeksekusi instruksi tanpa nilai balik [1]. Proses pertukaran data antar subprogram tersebut dilakukan melalui pengiriman parameter, baik secara call by value yang hanya menyalin nilai variabel, maupun call by pointer/reference yang melewatkan alamat memori variabel aktualnya [1]. Penggunaan call by pointer/reference sangat krusial dalam pemrosesan data, karena memungkinkan fungsi untuk mengakses dan memodifikasi elemen secara langsung pada lokasi memori aslinya tanpa perlu menyalin seluruh elemen data, sehingga menghemat konsumsi memori dan meningkatkan performa eksekusi program [1].
 
-### A. ...<br/>
-...
-#### 1. ...
-#### 2. ...
-#### 3. ...
-
-### B. ...<br/>
-...
-#### 1. ...
-#### 2. ...
-#### 3. ...
-
 ## Guided 
 
 ### 1. ...
@@ -242,7 +230,7 @@ Program C++ tersebut digunakan untuk membuat array karakter (string) yang bernam
 
 ## Unguided 
 
-### 1. (isi dengan soal unguided 1)
+### 1. (Buatlah program C++ untuk menghitung penjumlahan, pengurangan, dan perkalian dari dua buah matriks berukuran $3 \times 3$.)
 
 ```C++
 
@@ -322,44 +310,182 @@ int main() {
 penjelasan unguided 1 
 Program C++ tersebut digunakan untuk melakukan operasi pada dua matriks berukuran 3×3, yaitu matriks A dan B. Program terlebih dahulu meminta pengguna memasukkan setiap elemen dari kedua matriks menggunakan perulangan for. Setelah itu, program menghitung hasil penjumlahan dan pengurangan dengan menjumlahkan atau mengurangkan elemen yang berada pada posisi yang sama. Untuk perkalian matriks, digunakan perulangan tambahan dengan variabel k agar setiap elemen dihitung sesuai aturan perkalian matriks. Hasil dari ketiga operasi tersebut kemudian ditampilkan dalam bentuk matriks. Dengan program ini, kita dapat memahami penggunaan array dua dimensi dan perulangan bersarang dalam pengolahan data matriks.
 
-### 2. (isi dengan soal unguided 2)
+### 2. (Berdasarkan guided pointer dan reference sebelumnya, buatlah keduanya dapat menukar nilai dari 3 variabel)
 
 ```C++
-source code unguided 2
+
+#include <iostream>
+using namespace std;
+
+void tukarPointer(int *a, int *b, int *c) {
+    int temp = *a;
+    *a = *b;
+    *b = *c;
+    *c = temp;
+}
+
+void tukarReference(int &a, int &b, int &c) {
+    int temp = a;
+    a = b;
+    b = c;
+    c = temp;
+}
+
+int main() {
+    int a, b, c;
+
+    cout << "=== MENUKAR 3 VARIABEL ===" << endl;
+    cout << "Masukkan nilai a: ";
+    cin >> a;
+    cout << "Masukkan nilai b: ";
+    cin >> b;
+    cout << "Masukkan nilai c: ";
+    cin >> c;
+
+    cout << "\nNilai sebelum ditukar:" << endl;
+    cout << "a = " << a << endl;
+    cout << "b = " << b << endl;
+    cout << "c = " << c << endl;
+
+    int x = a, y = b, z = c;
+    tukarPointer(&x, &y, &z);
+
+    cout << "\nHasil menggunakan Pointer:" << endl;
+    cout << "a = " << x << endl;
+    cout << "b = " << y << endl;
+    cout << "c = " << z << endl;
+
+    tukarReference(a, b, c);
+
+    cout << "\nHasil menggunakan Reference:" << endl;
+    cout << "a = " << a << endl;
+    cout << "b = " << b << endl;
+    cout << "c = " << c << endl;
+
+    return 0;
+}
 ```
 ### Output Unguided 2 :
 
 ##### Output 1
-![Screenshot Output Unguided 2_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
-
-contoh :
-![Screenshot Output Unguided 2_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided2-1.png)
-
-##### Output 2
-![Screenshot Output Unguided 2_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 1_1](ss-ungguided2.png)
 
 penjelasan unguided 2
+Program C++ tersebut digunakan untuk menukar nilai dari tiga variabel dengan dua cara, yaitu menggunakan pointer dan reference. Fungsi tukarPointer() menerima alamat dari ketiga variabel sehingga nilai dapat diubah melalui operator *, sedangkan fungsi tukarReference() menggunakan reference agar perubahan nilai dapat dilakukan langsung pada variabel aslinya. Pada main(), pengguna memasukkan nilai a, b, dan c, kemudian nilai tersebut ditukar dengan urutan a menjadi b, b menjadi c, dan c menjadi a. Program juga membuat salinan x, y, dan z untuk menunjukkan hasil pertukaran menggunakan pointer tanpa mengubah nilai awal. Setelah itu, fungsi reference digunakan untuk menukar nilai a, b, dan c secara langsung.
 
-### 3. (isi dengan soal unguided 3)
+### 3. (Diketahui sebuah array 1 dimensi sebagai berikut :
+   arrA = {11, 8, 5, 7, 12, 26, 3, 54, 33, 55}
+   Buatlah program yang dapat mencari nilai minimum, maksimum, dan rata – rata dari array tersebut! Gunakan function cariMinimum() untuk mencari nilai minimum dan function cariMaksimum() untuk mencari nilai maksimum, serta gunakan prosedur hitungRataRata() untuk menghitung nilai rata – rata! Buat program menggunakan menu switch-case seperti berikut ini :
+
+   --- Menu Program Array ---
+   1. Tampilkan isi array
+   2. cari nilai maksimum
+   3. cari nilai minimum
+   4. Hitung nilai rata - rata)
 
 ```C++
-source code unguided 3
+
+#include <iostream>
+using namespace std;
+
+int cariMinimum(int arr[], int n) {
+    int min = arr[0];
+
+    for (int i = 1; i < n; i++) {
+        if (arr[i] < min) {
+            min = arr[i];
+        }
+    }
+
+    return min;
+}
+
+int cariMaksimum(int arr[], int n) {
+    int maks = arr[0];
+
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > maks) {
+            maks = arr[i];
+        }
+    }
+
+    return maks;
+}
+
+void hitungRataRata(int arr[], int n) {
+    int total = 0;
+
+    for (int i = 0; i < n; i++) {
+        total += arr[i];
+    }
+
+    double rataRata = (double) total / n;
+    cout << "Nilai rata-rata: " << rataRata << endl;
+}
+
+int main() {
+    int arrA[10] = {11, 8, 5, 7, 12, 26, 3, 54, 33, 55};
+    int pilihan;
+    int n = 10;
+
+    do {
+        cout << "\n--- Menu Program Array ---" << endl;
+        cout << "1. Tampilkan isi array" << endl;
+        cout << "2. Cari nilai maksimum" << endl;
+        cout << "3. Cari nilai minimum" << endl;
+        cout << "4. Hitung nilai rata-rata" << endl;
+        cout << "0. Keluar" << endl;
+        cout << "Pilih menu: ";
+        cin >> pilihan;
+
+        switch (pilihan) {
+            case 1:
+                cout << "Isi array: ";
+                for (int i = 0; i < n; i++) {
+                    cout << arrA[i] << " ";
+                }
+                cout << endl;
+                break;
+
+            case 2:
+                cout << "Nilai maksimum: "
+                     << cariMaksimum(arrA, n) << endl;
+                break;
+
+            case 3:
+                cout << "Nilai minimum: "
+                     << cariMinimum(arrA, n) << endl;
+                break;
+
+            case 4:
+                hitungRataRata(arrA, n);
+                break;
+
+            case 0:
+                cout << "Program selesai." << endl;
+                break;
+
+            default:
+                cout << "Pilihan tidak valid!" << endl;
+        }
+
+    } while (pilihan != 0);
+
+    return 0;
+}
 ```
 ### Output Unguided 3 :
 
 ##### Output 1
-![Screenshot Output Unguided 3_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
-
-contoh :
-![Screenshot Output Unguided 3_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided3-1.png)
-
-##### Output 2
-![Screenshot Output Unguided 3_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 1_1](ss-ungguided3.png)
 
 penjelasan unguided 3
+Program C++ tersebut digunakan untuk mengolah data dalam array yang berisi 10 nilai. Program menyediakan beberapa menu, yaitu menampilkan isi array, mencari nilai maksimum, mencari nilai minimum, dan menghitung nilai rata-rata. Fungsi cariMaksimum() dan cariMinimum() digunakan untuk mencari nilai terbesar dan terkecil dengan melakukan pengecekan setiap elemen array, sedangkan hitungRataRata() menjumlahkan seluruh nilai lalu membaginya dengan jumlah data. Menu program dibuat menggunakan switch dan perulangan do-while, sehingga pengguna dapat memilih menu berulang kali sampai memilih angka 0 untuk keluar.
 
 ## Kesimpulan
-...
+
+Berdasarkan praktikum Modul 2 tentang pengenalan bahasa C++ bagian kedua, dapat disimpulkan bahwa C++ memiliki berbagai fitur yang dapat digunakan untuk mengolah dan mengatur data, seperti array, pointer, reference, function, procedure, dan struktur perulangan. Melalui praktikum ini, dapat dipahami cara menggunakan array satu dimensi maupun multidimensi, mengakses data berdasarkan indeks, serta mengolah data dalam bentuk matriks. Selain itu, penggunaan pointer dan reference juga membantu dalam memahami cara mengakses alamat memori dan mengubah nilai variabel melalui sebuah fungsi. Pembuatan function dan procedure membuat program menjadi lebih terstruktur karena setiap proses dapat dipisahkan sesuai tugasnya. Dari beberapa program yang telah dibuat, dapat diketahui bahwa penggunaan konsep-konsep tersebut dapat mempermudah proses pengolahan data dan membuat program C++ lebih terorganisir.
+
 
 ## Referensi
 [1] Widodo, B., & Lestari, N. (2021). Analisis perbandingan efisiensi struktur data array dan linked list dalam bahasa C++. Jurnal Informatika, 15(1), 88–96.
